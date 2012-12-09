@@ -54,3 +54,11 @@ variations between the AIP and APS bibliography styles.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Thu Aug 09 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.9-1
++ Revision: 813410
+- Import texlive-biblatex-phys
+- Import texlive-biblatex-phys
+
