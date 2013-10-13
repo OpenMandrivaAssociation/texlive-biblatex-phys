@@ -1,11 +1,11 @@
-# revision 27176
+# revision 29139
 # category Package
 # catalog-ctan /macros/latex/contrib/biblatex-contrib/biblatex-phys
-# catalog-date 2012-07-24 16:42:22 +0200
+# catalog-date 2013-02-15 22:57:04 +0100
 # catalog-license lppl1.3
-# catalog-version 0.9
+# catalog-version 0.9e
 Name:		texlive-biblatex-phys
-Version:	0.9
+Version:	0.9e
 Release:	1
 Summary:	A biblatex implementation of the AIP and APS bibliography style
 Group:		Publishing
@@ -54,11 +54,3 @@ variations between the AIP and APS bibliography styles.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Thu Aug 09 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.9-1
-+ Revision: 813410
-- Import texlive-biblatex-phys
-- Import texlive-biblatex-phys
-
