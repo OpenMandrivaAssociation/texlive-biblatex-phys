@@ -6,7 +6,7 @@
 # catalog-version 0.9
 Name:		texlive-biblatex-phys
 Version:	0.9
-Release:	1
+Release:	2
 Summary:	A biblatex implementation of the AIP and APS bibliography style
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/biblatex-phys
