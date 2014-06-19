@@ -1,12 +1,12 @@
-# revision 29139
+# revision 34035
 # category Package
 # catalog-ctan /macros/latex/contrib/biblatex-contrib/biblatex-phys
-# catalog-date 2013-02-15 22:57:04 +0100
+# catalog-date 2014-05-14 19:30:50 +0200
 # catalog-license lppl1.3
-# catalog-version 0.9e
+# catalog-version 0.9f
 Name:		texlive-biblatex-phys
-Version:	0.9e
-Release:	6
+Version:	0.9f
+Release:	1
 Summary:	A biblatex implementation of the AIP and APS bibliography style
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/biblatex-phys
@@ -40,7 +40,6 @@ variations between the AIP and APS bibliography styles.
 %files
 %{_texmfdistdir}/tex/latex/biblatex-phys/phys.bbx
 %{_texmfdistdir}/tex/latex/biblatex-phys/phys.cbx
-%doc %{_texmfdistdir}/doc/latex/biblatex-phys/README
 %doc %{_texmfdistdir}/doc/latex/biblatex-phys/biblatex-phys.bib
 %doc %{_texmfdistdir}/doc/latex/biblatex-phys/biblatex-phys.pdf
 %doc %{_texmfdistdir}/doc/latex/biblatex-phys/biblatex-phys.tex
