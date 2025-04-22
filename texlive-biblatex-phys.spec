@@ -1,5 +1,5 @@
 Name:		texlive-biblatex-phys
-Version:	71905
+Version:	74898
 Release:	1
 Summary:	A biblatex implementation of the AIP and APS bibliography style
 Group:		Publishing
