@@ -1,46 +1,28 @@
-Name:		texlive-biblatex-phys
-Version:	74898
-Release:	1
-Summary:	A biblatex implementation of the AIP and APS bibliography style
+%global tl_name biblatex-phys
+%global tl_revision 74898
+
+Name:		texlive-%{tl_name}
+Epoch:		1
+Version:	1.1e
+Release:	%{tl_revision}.1
+Summary:	A BibLaTeX implementation of the AIP and APS bibliography style
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/biblatex-phys
-License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex-phys.r%{version}.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex-phys.doc.r%{version}.tar.xz
+License:	lppl1.3
+Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex-phys.r%{tl_revision}.tar.xz
+Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex-phys.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
+BuildSystem:	texlive
 BuildRequires:	texlive-tlpkg
-Requires(pre):	texlive-tlpkg
-Requires(post):	texlive-kpathsea
+%texlive_base_requires
+Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
-The biblatex-phys package provides an implementation of the
-bibliography styles of both the AIP and the APS for biblatex.
-This implementation follows standard biblatex conventions, and
-can be used simply by loading biblatex with the appropriate
-option: \usepackage[style=phys]{biblatex} A demonstration
-database is provided to show how to format input for the style.
-Style options are provided to cover the minor formatting
+The package provides an implementation of the bibliography styles of
+both the AIP and the APS for BibLaTeX. This implementation follows
+standard BibLaTeX conventions, and can be used simply by loading
+BibLaTeX with the appropriate option: \usepackage[style=phys]{biblatex}
+A demonstration database is provided to show how to format input for the
+style. Style options are provided to cover the minor formatting
 variations between the AIP and APS bibliography styles.
 
-%post
-%{_sbindir}/texlive.post
-
-%postun
-if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-fi
-
-#-----------------------------------------------------------------------
-%files
-%{_texmfdistdir}/tex/latex/biblatex-phys
-%doc %{_texmfdistdir}/doc/latex/biblatex-phys
-
-#-----------------------------------------------------------------------
-%prep
-%autosetup -p1 -c -a1
-
-%build
-
-%install
-mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar tex doc %{buildroot}%{_texmfdistdir}
